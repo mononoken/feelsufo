@@ -1,0 +1,14 @@
+---
+import Navigation from "@src/components/Navigation.astro";
+import type { Route } from "@src/types";
+
+type Props = {
+  routes: Route[];
+};
+
+const { routes } = Astro.props;
+---
+
+<header>
+  <Navigation routes={routes} />
+</header>
