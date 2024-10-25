@@ -125,6 +125,7 @@ h4 {
 }
 
 header h1 {
+  display: inline;
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.75rem;
@@ -152,4 +153,9 @@ nav ul {
 
 p {
   margin-bottom: 1rem;
+}
+
+svg {
+  height: 1.75rem;
+  width: 1.75rem;
 }

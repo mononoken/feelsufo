@@ -1,5 +1,6 @@
 ---
 import Navigation from "@src/components/Navigation.astro";
+import Ufo from "@src/icons/Ufo.astro";
 import type { Route } from "@src/types";
 
 const home = { name: "feelsufo", url: "/" };
@@ -12,7 +13,7 @@ const routes: Route[] = [
 
 <header>
   <a href={home.url}>
-    <h1>{home.name}</h1>
+    <div><Ufo /><h1>{home.name}</h1></div>
     <h2>Ken Maeshima</h2>
   </a>
   <Navigation routes={routes} />
