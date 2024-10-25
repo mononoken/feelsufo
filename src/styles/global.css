@@ -1,3 +1,21 @@
+@supports (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Space Grotesk Variable";
+    src: url("/fonts/SpaceGrotesk-Variable-subset.woff2") format("woff2");
+    font-weight: 1 999;
+    font-display: swap;
+  }
+}
+
+@font-face {
+  font-family: "Space Grotesk Static";
+  src:
+    url("/fonts/SpaceGrotesk-Static-subset.woff2") format("woff2"),
+    url("/fonts/SpaceGrotesk-Static-subset.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   --base: #191724;
   --surface: #1f1d2e;
@@ -18,7 +36,7 @@
 
 html {
   background-color: var(--base);
-  font-family: sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
@@ -58,6 +76,16 @@ footer a {
 
 header {
   display: flex;
+  font-family:
+    "Space Grotesk Static",
+    -apple-system,
+    sans-serif;
+  @supports (font-variation-settings: normal) {
+    font-family:
+      "Space Grotesk Variable",
+      -apple-system,
+      sans-serif;
+  }
   justify-content: space-between;
   align-items: center;
 }
@@ -65,7 +93,7 @@ header {
 header a[href="/"] {
   color: var(--love);
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 nav ul {
