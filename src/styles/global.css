@@ -101,6 +101,24 @@ header a[href="/"] {
   flex-direction: column;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family:
+    "Space Grotesk Static",
+    -apple-system,
+    sans-serif;
+  @supports (font-variation-settings: normal) {
+    font-family:
+      "Space Grotesk Variable",
+      -apple-system,
+      sans-serif;
+  }
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 header h1 {
   font-size: 1.75rem;
   font-weight: 500;
