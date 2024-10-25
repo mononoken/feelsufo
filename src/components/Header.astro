@@ -2,13 +2,15 @@
 import Navigation from "@src/components/Navigation.astro";
 import type { Route } from "@src/types";
 
-type Props = {
-  routes: Route[];
-};
-
-const { routes } = Astro.props;
+const home = { name: "feelsufo", url: "/" };
+const routes: Route[] = [
+  { name: "Projects", url: "/projects/" },
+  { name: "Blog", url: "/blog/" },
+  { name: "About", url: "/about/" },
+];
 ---
 
 <header>
+  <a href={home.url}><span>{home.name}</span></a>
   <Navigation routes={routes} />
 </header>

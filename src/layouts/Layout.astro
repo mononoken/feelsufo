@@ -3,20 +3,12 @@ import Header from "@src/components/Header.astro";
 import Footer from "@src/components/Footer.astro";
 import "@src/styles/reset.css";
 import "@src/styles/global.css";
-import type { Route } from "@src/types";
 
 type Props = {
   pageTitle: string;
 };
 
 const { pageTitle } = Astro.props;
-
-const routes: Route[] = [
-  { name: "Home", url: "/" },
-  { name: "Projects", url: "/projects/" },
-  { name: "Blog", url: "/blog/" },
-  { name: "About", url: "/about/" },
-];
 ---
 
 <html lang="en">
@@ -28,7 +20,7 @@ const routes: Route[] = [
     <title>feelsufo: {pageTitle}</title>
   </head>
   <body>
-    <Header routes={routes} />
+    <Header />
     <h1>{pageTitle}</h1>
     <slot />
     <Footer />
