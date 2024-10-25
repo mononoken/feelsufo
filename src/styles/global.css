@@ -61,6 +61,11 @@ a:hover {
   color: var(--pine);
 }
 
+em {
+  color: var(--subtle);
+  font-style: italic;
+}
+
 footer {
   padding-top: 1rem;
 }
@@ -132,7 +137,19 @@ header h2 {
   line-height: 1rem;
 }
 
+img {
+  height: auto;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  width: calc(100% + 2rem);
+}
+
 nav ul {
   display: flex;
   gap: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
