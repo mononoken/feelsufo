@@ -61,6 +61,10 @@ a:hover {
   color: var(--pine);
 }
 
+footer {
+  padding-top: 1rem;
+}
+
 footer ul {
   display: flex;
   justify-content: center;
@@ -75,6 +79,7 @@ footer a {
 }
 
 header {
+  align-items: center;
   display: flex;
   font-family:
     "Space Grotesk Static",
@@ -87,13 +92,26 @@ header {
       sans-serif;
   }
   justify-content: space-between;
-  align-items: center;
+  padding-bottom: 1rem;
 }
 
 header a[href="/"] {
   color: var(--love);
-  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 1.75rem;
   font-weight: 500;
+  line-height: 1.75rem;
+}
+
+header h2 {
+  color: var(--gold);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1rem;
 }
 
 nav ul {

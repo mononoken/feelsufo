@@ -11,6 +11,9 @@ const routes: Route[] = [
 ---
 
 <header>
-  <a href={home.url}><span>{home.name}</span></a>
+  <a href={home.url}>
+    <h1>{home.name}</h1>
+    <h2>Ken Maeshima</h2>
+  </a>
   <Navigation routes={routes} />
 </header>
