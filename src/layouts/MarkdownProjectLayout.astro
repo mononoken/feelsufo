@@ -1,0 +1,16 @@
+---
+import Layout from "@src/layouts/Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout pageTitle={frontmatter.title}>
+  {
+    frontmatter.description && (
+      <p>
+        <em>{frontmatter.description}</em>
+      </p>
+    )
+  }
+  {frontmatter.github && <a href={frontmatter.github}>Github</a>}
+  <slot />
+</Layout>
