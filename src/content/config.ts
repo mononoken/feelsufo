@@ -15,6 +15,11 @@ const projectsCollection = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),
+    description: z.string(),
+    url: z.string().nullable().optional(),
+    github: z.string().nullable().optional(),
+    createdAt: z.date(),
+    lastUpdated: z.date(),
   }),
 });
 

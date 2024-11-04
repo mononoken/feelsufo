@@ -11,6 +11,7 @@ const { frontmatter } = Astro.props;
       </p>
     )
   }
+  {frontmatter.url && <a href={frontmatter.url}>{frontmatter.url}</a>}
   {frontmatter.github && <a href={frontmatter.github}>Github</a>}
   <slot />
 </Layout>

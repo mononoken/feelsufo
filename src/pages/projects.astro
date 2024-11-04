@@ -5,13 +5,16 @@ import Layout from "../layouts/Layout.astro";
 const pageTitle = "Projects";
 
 const projects = await getCollection("projects");
+const sortedProjects = projects.sort(
+  (a, b) => new Date(b.data.lastUpdated) - new Date(a.data.lastUpdated),
+);
 ---
 
 <Layout pageTitle={pageTitle}>
   <p>My projects</p>
   <ul>
     {
-      projects.map((project) => (
+      sortedProjects.map((project) => (
         <li>
           <a href={`/projects/${project.slug}`}>{project.data.title}</a>
         </li>
