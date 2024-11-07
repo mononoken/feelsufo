@@ -140,14 +140,6 @@ header h2 {
   margin-bottom: 0;
 }
 
-img {
-  height: auto;
-  margin-bottom: 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  width: calc(100% + 2rem);
-}
-
 nav ul {
   display: flex;
   flex-direction: row;
@@ -166,7 +158,7 @@ ul {
 
 .card {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 42px 1fr;
   grid-template-areas:
     "logo title"
     "logo description";
@@ -176,8 +168,13 @@ ul {
   padding: 0.5rem;
 }
 
-.card img {
+.card .icon {
   grid-area: logo;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .card h2,
@@ -197,4 +194,16 @@ ul {
 
 .card p {
   grid-area: description;
+}
+
+.icon img {
+  display: block;
+}
+
+.post img {
+  height: auto;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  width: calc(100% + 2rem);
 }
