@@ -6,4 +6,6 @@ url: https://fae-scribe-c77ffba44917.herokuapp.com/
 github: https://github.com/mononoken/fae-scribe
 createdAt: 2023-07-08
 lastUpdated: 2024-07-07
+icon: "@src/assets/icons/fae-scribe.svg"
+iconAlt: Fae Scribe icon
 ---
