@@ -1,9 +1,24 @@
 ---
+import { Image } from "astro:assets";
+
 const { project } = Astro.props;
 ---
 
 <div class="card">
-  <div>x</div>
+  {
+    project.data.icon ? (
+      <div class="icon">
+        <Image
+          src={project.data.icon}
+          alt={project.data.iconAlt}
+          width="42"
+          height="42"
+        />
+      </div>
+    ) : (
+      <div>x</div>
+    )
+  }
   <h2>{project.data.title}</h2>
   <p>{project.data.description}</p>
 </div>
