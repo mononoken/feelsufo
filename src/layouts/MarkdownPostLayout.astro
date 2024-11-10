@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 import Layout from "@src/layouts/Layout.astro";
 const { frontmatter } = Astro.props;
 ---
@@ -15,5 +13,7 @@ const { frontmatter } = Astro.props;
     )
   }
   {frontmatter.author && <p>Written by: {frontmatter.author}</p>}
-  <slot />
+  <div class="post">
+    <slot />
+  </div>
 </Layout>

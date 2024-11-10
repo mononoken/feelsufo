@@ -221,6 +221,10 @@ ul {
   display: block;
 }
 
+.post {
+  margin-top: 2rem;
+}
+
 .post img {
   height: auto;
   margin-bottom: 1rem;
