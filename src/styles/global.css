@@ -191,6 +191,7 @@ ul {
 .card .icon {
   grid-area: logo;
   display: flex;
+  color: var(--foam);
   width: 100%;
   height: 100%;
   justify-content: center;
