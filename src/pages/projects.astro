@@ -5,9 +5,11 @@ import Card from "@src/components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "Projects";
 
-const projects = await getCollection("projects");
+const projects: any[] = await getCollection("projects");
 const sortedProjects = projects.sort(
-  (a, b) => new Date(b.data.lastUpdated) - new Date(a.data.lastUpdated),
+  (a: any, b: any) =>
+    new Date(b.data.lastUpdated).getTime() -
+    new Date(a.data.lastUpdated).getTime(),
 );
 ---
 
