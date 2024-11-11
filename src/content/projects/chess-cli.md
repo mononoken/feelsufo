@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownProjectLayout.astro
 title: Chess CLI
 description: The board game chess, implemented in a command-line interface and built with Ruby.
-url:
+website:
 github: https://github.com/mononoken/chess
 createdAt: 2022-11-19
 lastUpdated: 2023-06-23
