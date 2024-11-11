@@ -159,6 +159,10 @@ header h2 {
   margin-bottom: 0;
 }
 
+img {
+  border-radius: 3px;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
