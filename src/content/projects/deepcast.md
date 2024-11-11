@@ -16,6 +16,9 @@ DeepCast is a startup that is building tools for listeners and creators of podca
 
 I worked as a full stack developer at DeepCast. One area I specialized in was our search functionality. We provider search results using both keyword search and semantic search. I also implemented search filtering for both of these search techniques.
 
+![DeepCast search preview](@src/assets/projects/deepcast-search.jpeg)
+![DeepCast transcript view](@src/assets/projects/deepcast-transcript.png)
+
 We also build tools for podcasters to help build their podcasts and market them. I worked on tools that allow podcasters to customize the content that displays on their podcast's pages.
 
 ![Home page of DeepCast Pro](@src/assets/projects/deepcast-pro-home.jpeg)
