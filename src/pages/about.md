@@ -2,7 +2,6 @@
 layout: "@src/layouts/MarkdownPostLayout.astro"
 title: "About Me"
 description: "When I was in elementary school, I was told my dad was an alien. Ever since, I've been trying to discover how to use my half-alien powers."
-tags: ["astro", "blogging", "learning in public"]
 ---
 
 ![Ken and Fae beside a Japanese maple tree.](@src/assets/japan-garden.png)
