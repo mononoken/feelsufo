@@ -104,7 +104,6 @@ footer a {
 }
 
 header {
-  align-items: center;
   display: flex;
   font-family:
     "Space Grotesk Static",
@@ -200,13 +199,13 @@ ul {
 
 .card h2,
 .card p {
-  color: var(--text);
+  color: var(--foam);
   margin-bottom: 0;
 }
 
 .card:hover h2,
 .card:hover p {
-  color: var(--foam);
+  color: var(--pine);
 }
 
 .card h2 {
@@ -215,6 +214,12 @@ ul {
 
 .card p {
   grid-area: description;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .icon img {
