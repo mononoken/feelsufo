@@ -6,7 +6,7 @@ website: https://deepcast.fm
 github:
 createdAt: 2024-08-19
 lastUpdated: 2024-11-03
-icon: "@src/assets/icons/deepcast.svg"
+icon: "/public/deepcast.svg"
 iconAlt: DeepCast icon
 ---
 
