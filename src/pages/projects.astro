@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 
 import Card from "@src/components/Card.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from "@src/layouts/Layout.astro";
 const pageTitle = "Projects";
 
 const projects: any[] = await getCollection("projects");

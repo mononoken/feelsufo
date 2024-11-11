@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownProjectLayout.astro
+layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: Chess CLI
 description: The board game chess, implemented in a command-line interface and built with Ruby.
 website:

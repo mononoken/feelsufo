@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownProjectLayout.astro
+layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: Fae Scribe
 description: A note taking app for role-playing games built with Ruby on Rails.
 website: https://fae-scribe-c77ffba44917.herokuapp.com/

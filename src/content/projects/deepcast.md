@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownProjectLayout.astro
+layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: DeepCast
 description: A podcasting platform powered by AI tools.
 website: https://deepcast.fm

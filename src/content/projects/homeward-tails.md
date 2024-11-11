@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownProjectLayout.astro
+layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: Homeward Tails
 description: Homeward Tails is an application that makes it easy to connect shelters with people who are looking to adopt or foster pets.
 website: https://homewardtails.org

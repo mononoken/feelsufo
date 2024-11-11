@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownProjectLayout.astro
+layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: Dungeon Market
 description: A shopping cart esque web app for building groups of monsters for D&D encounters.
 website: https://dungeon-market.vercel.app
