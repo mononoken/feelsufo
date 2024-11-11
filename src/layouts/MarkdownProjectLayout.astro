@@ -1,41 +1,54 @@
 ---
+import Footer from "@src/components/Footer.astro";
+import Header from "@src/components/Header.astro";
 import GithubIcon from "@src/icons/GithubIcon.astro";
-import Layout from "@src/layouts/Layout.astro";
 import "@src/styles/reset.css";
 import "@src/styles/global.css";
 
-const { frontmatter } = Astro.props;
+const { frontmatter, pageTitle } = Astro.props;
 ---
 
-<div></div>
-<Layout>
-  <div class="header">
-    {
-      frontmatter.website ? (
-        <a href={frontmatter.website}>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>feelsufo: {pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    {pageTitle && <h1>{pageTitle}</h1>}
+    <div class="header">
+      {
+        frontmatter.website ? (
+          <a href={frontmatter.website}>
+            <h1>{frontmatter.title}</h1>
+          </a>
+        ) : (
           <h1>{frontmatter.title}</h1>
-        </a>
-      ) : (
-        <h1>{frontmatter.title}</h1>
-      )
-    }
-    {
-      frontmatter.github && (
-        <a href={frontmatter.github}>
-          <GithubIcon height={24} width={24} />
-        </a>
-      )
-    }
-  </div>
+        )
+      }
+      {
+        frontmatter.github && (
+          <a href={frontmatter.github}>
+            <GithubIcon height={24} width={24} />
+          </a>
+        )
+      }
+    </div>
 
-  {
-    frontmatter.description && (
-      <p>
-        <em>{frontmatter.description}</em>
-      </p>
-    )
-  }
-  <div class="post">
-    <slot />
-  </div>
-</Layout>
+    {
+      frontmatter.description && (
+        <p>
+          <em>{frontmatter.description}</em>
+        </p>
+      )
+    }
+    <div class="post">
+      <slot />
+    </div>
+    <Footer />
+    <script></script>
+  </body>
+</html>
