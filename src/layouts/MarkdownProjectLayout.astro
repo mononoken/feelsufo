@@ -1,9 +1,30 @@
 ---
+import GithubIcon from "@src/icons/GithubIcon.astro";
 import Layout from "@src/layouts/Layout.astro";
+
 const { frontmatter } = Astro.props;
 ---
 
-<Layout pageTitle={frontmatter.title}>
+<Layout>
+  <div class="header">
+    {
+      frontmatter.website ? (
+        <a href={frontmatter.website}>
+          <h1>{frontmatter.title}</h1>
+        </a>
+      ) : (
+        <h1>{frontmatter.title}</h1>
+      )
+    }
+    {
+      frontmatter.github && (
+        <a href={frontmatter.github}>
+          <GithubIcon height={24} width={24} />
+        </a>
+      )
+    }
+  </div>
+
   {
     frontmatter.description && (
       <p>
