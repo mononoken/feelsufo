@@ -9,3 +9,5 @@ lastUpdated: 2024-07-23
 icon: "@src/assets/icons/dungeon-market.svg"
 iconAlt: Dungeon Market icon
 ---
+
+Dunegon Market is a 'shopping-cart-esque' app built to create carts of monsters to help build combat encounters in D&D. The gold currency shown for each monster is calculated from their challenge rating.
