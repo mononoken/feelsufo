@@ -146,42 +146,43 @@ table {
   font-display: swap;
 }
 
-/* :root { */
-/*   --base: #faf4ed; */
-/*   --surface: #fffaf3; */
-/*   --overlay: #f2e9e1; */
-/*   --muted: #9893a5; */
-/*   --subtle: #797593; */
-/*   --text: #575279; */
-/*   --love: #b4637a; */
-/*   --gold: #ea9d34; */
-/*   --rose: #d7827e; */
-/*   --pine: #286983; */
-/*   --foam: #56949f; */
-/*   --iris: #907aa9; */
-/*   --highlight-low: #f4ede8; */
-/*   --highlight-med: #dfdad9; */
-/*   --highlight-high: #cecacd; */
-/* } */
+:root {
+  --base: #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --muted: #9893a5;
+  --subtle: #605d76;
+  --text: #484563;
+  /* --love: #b4637a; */
+  --love: #944257;
+  --gold: #ea9d34;
+  --rose: #d7827e;
+  --pine: #286983;
+  --foam: #56949f;
+  --iris: #907aa9;
+  --highlight-low: #f4ede8;
+  --highlight-med: #dfdad9;
+  --highlight-high: #cecacd;
+}
 
 /* @media (prefers-color-scheme: dark) { */
-:root {
-  --base: #191724;
-  --surface: #1f1d2e;
-  --overlay: #26233a;
-  --muted: #6e6a86;
-  --subtle: #908caa;
-  --text: #e0def4;
-  --love: #eb6f92;
-  --gold: #f6c177;
-  --rose: #ebbcba;
-  --pine: #31748f;
-  --foam: #9ccfd8;
-  --iris: #c4a7e7;
-  --highlight-low: #21202e;
-  --highlight-med: #403d52;
-  --highlight-high: #524f67;
-}
+/* :root { */
+/*   --base: #191724; */
+/*   --surface: #1f1d2e; */
+/*   --overlay: #26233a; */
+/*   --muted: #6e6a86; */
+/*   --subtle: #908caa; */
+/*   --text: #e0def4; */
+/*   --love: #eb6f92; */
+/*   --gold: #f6c177; */
+/*   --rose: #ebbcba; */
+/*   --pine: #31748f; */
+/*   --foam: #9ccfd8; */
+/*   --iris: #c4a7e7; */
+/*   --highlight-low: #21202e; */
+/*   --highlight-med: #403d52; */
+/*   --highlight-high: #524f67; */
+/* } */
 /* } */
 
 html {
@@ -203,8 +204,7 @@ body {
 }
 
 a {
-  color: var(--foam);
-  text-decoration: none;
+  color: var(--pine);
 }
 
 a:hover {
@@ -231,6 +231,7 @@ footer a {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  text-decoration: none;
 }
 
 header {
@@ -249,8 +250,12 @@ header {
   padding-bottom: 1rem;
 }
 
+header a {
+  text-decoration: none;
+}
+
 header a[href="/"] {
-  color: var(--foam);
+  color: var(--pine);
   display: flex;
   flex-direction: column;
 }
@@ -282,7 +287,7 @@ header h1 {
 }
 
 header h2 {
-  color: var(--gold);
+  color: var(--love);
   font-size: 1rem;
   font-weight: 300;
   line-height: 1rem;
@@ -317,6 +322,7 @@ ul {
     "logo title"
     "logo description";
   gap: 0.5rem;
+  border: 1px solid #ffeed5;
   border-radius: 8px;
   padding: 0.5rem;
 }
@@ -324,7 +330,7 @@ ul {
 .card .icon {
   grid-area: logo;
   display: flex;
-  color: var(--foam);
+  color: var(--pine);
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -333,13 +339,17 @@ ul {
 
 .card h2,
 .card p {
-  color: var(--foam);
+  color: var(--pine);
   margin-bottom: 0;
 }
 
 .card:hover h2,
 .card:hover p {
   color: var(--pine);
+}
+
+a:has(.card) {
+  text-decoration: none;
 }
 
 .card h2 {
