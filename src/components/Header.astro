@@ -4,15 +4,14 @@ import type { Route } from "@src/types";
 
 const home = { name: "feelsufo", url: "/" };
 const routes: Route[] = [
-  { name: "Projects", url: "/projects/" },
-  { name: "About", url: "/about/" },
+  { name: "ABOUT", url: "/about/" },
+  { name: "PROJECTS", url: "/projects/" },
 ];
 ---
 
 <header>
   <a href={home.url}>
-    <h1>{home.name}</h1>
-    <h2>Ken Maeshima</h2>
+    <h1>Ken Maeshima</h1>
   </a>
   <Navigation routes={routes} />
 </header>

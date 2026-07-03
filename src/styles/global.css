@@ -186,17 +186,20 @@ table {
 /* } */
 
 html {
-  background-color: var(--base);
   font-family: ui-sans-serif, system-ui, sans-serif;
+  background-color: var(--muted);
 }
 
 body {
   margin: 0 auto;
   width: 100%;
+  height: 100%;
+  min-height: 100vh;
   max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
   color: var(--text);
+  background-color: var(--base);
 }
 
 * {
@@ -204,10 +207,6 @@ body {
 }
 
 a {
-  color: var(--pine);
-}
-
-a:hover {
   color: var(--pine);
 }
 
@@ -235,7 +234,6 @@ footer a {
 }
 
 header {
-  display: flex;
   font-family:
     "Space Grotesk Static",
     -apple-system,
@@ -246,18 +244,29 @@ header {
       -apple-system,
       sans-serif;
   }
-  justify-content: space-between;
   padding-bottom: 1rem;
 }
 
 header a {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 header a[href="/"] {
   color: var(--pine);
   display: flex;
   flex-direction: column;
+}
+
+header a h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+header a h2 {
+  font-size: 1.5rem;
 }
 
 h1,
@@ -298,10 +307,27 @@ img {
   border-radius: 3px;
 }
 
+nav {
+  background-color: var(--love);
+  color: var(--base);
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav a {
+  color: var(--base);
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 p {

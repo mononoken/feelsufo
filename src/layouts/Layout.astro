@@ -19,10 +19,12 @@ const { pageTitle } = Astro.props;
     <title>feelsufo: {pageTitle}</title>
   </head>
   <body>
-    <Header />
-    {pageTitle && <h1>{pageTitle}</h1>}
-    <slot />
-    <Footer />
+    <div id="wrap">
+      <Header />
+      {pageTitle && <h1>{pageTitle}</h1>}
+      <slot />
+      <Footer />
+    </div>
     <script></script>
   </body>
 </html>
