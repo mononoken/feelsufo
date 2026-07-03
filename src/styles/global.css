@@ -407,3 +407,17 @@ a:has(.card) {
   margin-right: -1rem;
   width: calc(100% + 2rem);
 }
+
+.post .video-embed {
+  aspect-ratio: 16 / 9;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.post .video-embed iframe {
+  border: 0;
+  border-radius: 3px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
