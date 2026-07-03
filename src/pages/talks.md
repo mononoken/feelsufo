@@ -1,10 +1,11 @@
 ---
 layout: "@src/layouts/MarkdownPostLayout.astro"
 title: "Talks"
-description: "chat chat"
 ---
 
-chat chat
+## Authorization Layer with ActionPolicy for Ruby for Good (RubyConf 2024)
+
+I gave a lightning talk at RubyConf 2024 in Chicago on the [authorization layer I built](https://github.com/rubyforgood/homeward-tails/pull/466) for the [Homeward Tails](https://homewardtails.org) project for [Ruby for Good](https://rubyforgood.org).
 
 <figure class="video-embed">
   <iframe
