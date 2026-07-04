@@ -157,6 +157,7 @@ table {
   --love: #944257;
   --gold: #ea9d34;
   --rose: #d7827e;
+  --rose-light: #ffc2bd;
   --pine: #286983;
   --foam: #56949f;
   --iris: #907aa9;
@@ -187,7 +188,7 @@ table {
 
 html {
   font-family: ui-sans-serif, system-ui, sans-serif;
-  background-color: var(--muted);
+  background-color: var(--text);
 }
 
 body {
@@ -207,7 +208,16 @@ body {
 }
 
 a {
-  color: var(--pine);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post :where(p, li, small) a {
+  background-image: linear-gradient(to right, var(--rose-light), var(--rose));
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 300% 40%;
+  text-decoration: none;
 }
 
 em {
