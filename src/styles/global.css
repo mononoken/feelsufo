@@ -258,15 +258,27 @@ a {
 
 p a,
 .post :where(p, li, small) a {
-  background-image: linear-gradient(
-    to right,
-    var(--rose-lightest),
-    var(--rose-light)
-  );
+  background-image:
+    linear-gradient(var(--rose-light), var(--rose-light)),
+    linear-gradient(var(--rose-lightest), var(--rose-lightest));
   background-repeat: no-repeat;
-  background-position: 0% 100%;
-  background-size: 300% 40%;
+  background-position:
+    0% 100%,
+    0% 100%;
+  background-size:
+    0% 40%,
+    100% 40%;
   text-decoration: none;
+  transition: background-size 240ms ease;
+}
+
+p a:hover,
+p a:focus-visible,
+.post :where(p, li, small) a:hover,
+.post :where(p, li, small) a:focus-visible {
+  background-size:
+    100% 40%,
+    100% 40%;
 }
 
 em {
@@ -443,15 +455,25 @@ a:has(.card) {
   font-size: 1.4rem;
   grid-area: title;
   width: fit-content;
-  background-image: linear-gradient(
-    to right,
-    var(--rose-lightest),
-    var(--rose-light)
-  );
+  background-image:
+    linear-gradient(var(--rose-light), var(--rose-light)),
+    linear-gradient(var(--rose-lightest), var(--rose-lightest));
   background-repeat: no-repeat;
-  background-position: 0% 100%;
-  background-size: 300% 40%;
+  background-position:
+    0% 100%,
+    0% 100%;
+  background-size:
+    0% 40%,
+    100% 40%;
   text-decoration: none;
+  transition: background-size 240ms ease;
+}
+
+a:hover .card h2,
+a:focus-visible .card h2 {
+  background-size:
+    100% 40%,
+    100% 40%;
 }
 
 .card p {
