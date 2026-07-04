@@ -14,4 +14,4 @@ iconAlt: Untappd for Business icon
 
 <small class="photo-caption">One of our Untappd for Business menus in the wild at a brewery.</small>
 
-At Next Glass, I've worked on projects and features that empower breweries to quickly build the infrastructure they need to increase sells and give breweries.
+At Next Glass, I've worked on projects and features that empower beverage-selling venues to increase sells and simplify their operations. I've had fun building brewery distribution tracking stats and OrderHub, an ordering platform for venues to order from self-distributing breweries.

@@ -1,6 +1,6 @@
 ---
 layout: "@src/layouts/MarkdownPostLayout.astro"
-title: "About Me"
+title: "About"
 ---
 
 ![Ken and Fae beside a Japanese maple tree.](/japan-garden.png)
