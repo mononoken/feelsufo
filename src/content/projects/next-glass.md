@@ -10,8 +10,8 @@ icon: "/public/utfb.svg"
 iconAlt: Untappd for Business icon
 ---
 
-![Untappd for Business Digital Menu]
-
-foo bar baz
-
 ![Digital Menu on a TV at a bar](/digital-menu.jpg)
+
+<small class="photo-caption">One of our Untappd for Business menus in the wild at a brewery.</small>
+
+At Next Glass, I've worked on projects and features that empower breweries to quickly build the infrastructure they need to increase sells and give breweries.

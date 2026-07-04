@@ -478,10 +478,11 @@ a:has(.card) {
   width: calc(100% + 2rem);
 }
 
-.post p:has(.photo-credit) {
+.post p:has(:where(.photo-caption, .photo-credit)) {
   margin-top: -0.5rem;
 }
 
+.photo-caption,
 .photo-credit {
   color: var(--subtle);
   display: block;
@@ -489,6 +490,7 @@ a:has(.card) {
   line-height: 1.35;
 }
 
+.photo-caption a,
 .photo-credit a {
   color: var(--subtle);
   background-size: 300% 28%;
