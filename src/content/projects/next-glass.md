@@ -2,7 +2,7 @@
 layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: Next Glass (Untappd)
 description: Build beer, food, wine, and liquor menus for your restaurants, bars, breweries, and other food and beverage retail outlets and display digitally.
-website: https://business.untappd.com
+website: https://www.nextglass.co
 github:
 createdAt: 2025-07-14
 lastUpdated: 2026-07-03

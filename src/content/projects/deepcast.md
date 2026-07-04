@@ -1,8 +1,8 @@
 ---
 layout: "@src/layouts/MarkdownProjectLayout.astro"
 title: DeepCast
-description: A podcasting platform powered by AI tools.
-website: https://deepcast.fm
+description: A former podcasting startup that built AI-powered discovery and creator tools.
+website: https://podnews.net/press-release/favorite-podcasts-discover-podcasts-didn-t
 github:
 createdAt: 2024-08-19
 lastUpdated: 2024-11-03
