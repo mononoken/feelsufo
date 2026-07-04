@@ -164,6 +164,7 @@ table {
   --highlight-low: #f4ede8;
   --highlight-med: #dfdad9;
   --highlight-high: #cecacd;
+  --static-texture: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.34'/%3E%3C/svg%3E");
 }
 
 /* @media (prefers-color-scheme: dark) { */
@@ -189,6 +190,9 @@ table {
 html {
   font-family: ui-sans-serif, system-ui, sans-serif;
   background-color: var(--text);
+  background-image: var(--static-texture);
+  background-size: 180px 180px;
+  background-attachment: fixed;
 }
 
 body {
