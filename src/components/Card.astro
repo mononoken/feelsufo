@@ -1,19 +1,33 @@
 ---
 import { Image } from "astro:assets";
+import chessCliIcon from "@src/assets/icons/chess-cli.svg?raw";
+import dungeonMarketIcon from "@src/assets/icons/dungeon-market.svg?raw";
+import faeScribeIcon from "@src/assets/icons/fae-scribe.svg?raw";
 
 const { project } = Astro.props;
+
+const inlineIcons: Record<string, string> = {
+  "chess-cli": chessCliIcon,
+  "dungeon-market": dungeonMarketIcon,
+  "fae-scribe": faeScribeIcon,
+};
+
+const inlineIcon = inlineIcons[project.slug];
+const iconAlt = project.data.iconAlt ?? "";
 ---
 
 <div class="card">
   {
-    project.data.icon ? (
-      <div class="icon">
-        <Image
-          src={project.data.icon}
-          alt={project.data.iconAlt}
-          width="42"
-          height="42"
-        />
+    inlineIcon ? (
+      <div
+        class="card-icon"
+        role={iconAlt ? "img" : undefined}
+        aria-label={iconAlt || undefined}
+        set:html={inlineIcon}
+      />
+    ) : project.data.icon ? (
+      <div class="card-icon">
+        <Image src={project.data.icon} alt={iconAlt} width="42" height="42" />
       </div>
     ) : (
       <div>x</div>

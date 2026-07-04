@@ -11,11 +11,22 @@ const { routes } = Astro.props;
 <nav>
   <ul>
     {
-      routes.map((route) => (
+      routes.map((route, index) => (
         <li>
+          {index > 0 && (
+            <span class="nav-divider" aria-hidden="true">
+              /
+            </span>
+          )}
           <a href={route.url}>{route.name}</a>
         </li>
       ))
     }
+    <li>
+      <span class="nav-divider" aria-hidden="true"> / </span>
+      <a href="https://github.com/mononoken" target="_blank" rel="noreferrer">
+        GITHUB
+      </a>
+    </li>
   </ul>
 </nav>

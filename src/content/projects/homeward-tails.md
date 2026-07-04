@@ -6,17 +6,15 @@ website: https://homewardtails.org
 github: https://github.com/rubyforgood/homeward-tails
 createdAt: 2024-01-13
 lastUpdated: 2024-11-03
-icon: "@src/assets/icons/homeward-tails.svg"
+icon: "public/ruby-for-good.jpg"
 iconAlt: Homeward Tails icon
 ---
 
 ![Home page of Homeward Tails](@src/assets/projects/pet-rescue-home.jpeg)
 
-I started contributing to Homeward Tails in January 2024. After working on a few issues, I noticed the authorization throughout the application was inconsistent and even missing in some areas. I volunteered to implement an authorization framework for the entire app to address these issues.
+I was a lead on the Homeward Tails project supported by [Ruby for Good](https://rubyforgood.org) and had a blast building the [Authorization framework with Action Policy #466](https://github.com/rubyforgood/homeward-tails/pull/466) to secure the application. I gave [a talk](/talks) on that work at RubyConf 2024.
 
-The resulting work took a little over a month and can be found in this PR [Authorization framework with Action Policy #466](https://github.com/rubyforgood/homeward-tails/pull/466).
-
-After working on the app more, I was asked to join the project as a collaborator and member of the lead team to further help the project. I am continuing to work with the Homeward Tails team and having lots of fun doing so!
+I also enjoyed implementing support for fosterers and leading an in-person team at the Ruby for Good 2024 event to improve the design of the dashboards. As a lead, I met with the team weekly to plan out features and reviewed the open-source PRs from the community.
 
 ![Dashboard view of website](@src/assets/projects/pet-rescue-staff.jpeg)
 ![Pet adoption page](@src/assets/projects/pet-rescue-adopt.jpeg)
