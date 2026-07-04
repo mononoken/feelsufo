@@ -241,7 +241,8 @@ body {
 }
 
 @media (min-width: 42rem) {
-  body {
+  body,
+  img {
     border-radius: 8px;
   }
 }
@@ -359,10 +360,6 @@ header h2 {
   font-weight: 300;
   line-height: 1rem;
   margin-bottom: 0;
-}
-
-img {
-  border-radius: 3px;
 }
 
 nav {
