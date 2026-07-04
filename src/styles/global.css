@@ -440,6 +440,7 @@ a:has(.card) {
 }
 
 .card h2 {
+  font-size: 1.4rem;
   grid-area: title;
   width: fit-content;
   background-image: linear-gradient(
