@@ -388,10 +388,10 @@ ul {
   padding: 0.5rem;
 }
 
-.card .icon {
+.card-icon {
   grid-area: logo;
   display: flex;
-  color: var(--text);
+  color: var(--rose);
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -432,8 +432,11 @@ a:has(.card) {
   justify-content: space-between;
 }
 
-.icon img {
+.card-icon img,
+.card-icon svg {
   display: block;
+  height: 42px;
+  width: 42px;
 }
 
 .post {
