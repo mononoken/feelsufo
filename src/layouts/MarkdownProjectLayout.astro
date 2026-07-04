@@ -20,7 +20,7 @@ const { frontmatter } = Astro.props;
     <div class="header">
       {
         frontmatter.website ? (
-          <a href={frontmatter.website}>
+          <a href={frontmatter.website} target="_blank" rel="noreferrer">
             <h1>{frontmatter.title}</h1>
           </a>
         ) : (
@@ -29,7 +29,7 @@ const { frontmatter } = Astro.props;
       }
       {
         frontmatter.github && (
-          <a href={frontmatter.github}>
+          <a href={frontmatter.github} target="_blank" rel="noreferrer">
             <GithubIcon height={24} width={24} />
           </a>
         )
