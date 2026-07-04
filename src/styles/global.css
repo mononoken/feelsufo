@@ -158,6 +158,7 @@ table {
   --gold: #ea9d34;
   --rose: #d7827e;
   --rose-light: #ffc2bd;
+  --rose-lightest: #ffd5d1;
   --pine: #286983;
   --foam: #56949f;
   --iris: #907aa9;
@@ -217,7 +218,11 @@ a {
 }
 
 .post :where(p, li, small) a {
-  background-image: linear-gradient(to right, var(--rose-light), var(--rose));
+  background-image: linear-gradient(
+    to right,
+    var(--rose-lightest),
+    var(--rose-light)
+  );
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: 300% 40%;
