@@ -241,8 +241,7 @@ body {
 }
 
 @media (min-width: 42rem) {
-  body,
-  img {
+  body {
     border-radius: 8px;
   }
 }
@@ -476,6 +475,25 @@ a:has(.card) {
   margin-left: -1rem;
   margin-right: -1rem;
   width: calc(100% + 2rem);
+}
+
+img.home-photo {
+  height: auto;
+  margin-bottom: 0;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: 1rem;
+  width: calc(100% + 2rem);
+}
+
+@media (min-width: 42rem) {
+  .post img,
+  img.home-photo {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    border-radius: 8px;
+  }
 }
 
 .post p:has(:where(.photo-caption, .photo-credit)) {
