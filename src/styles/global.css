@@ -197,6 +197,7 @@ table {
   --highlight-low: #f4ede8;
   --highlight-med: #dfdad9;
   --highlight-high: #cecacd;
+  --page-gutter: 24px;
   --static-texture: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.34'/%3E%3C/svg%3E");
 }
 
@@ -234,7 +235,7 @@ body {
   height: 100%;
   min-height: 100vh;
   max-width: 45rem;
-  padding: 1rem;
+  padding: 1rem var(--page-gutter);
   line-height: 1.5;
   color: var(--text);
   background-color: var(--base);
@@ -364,10 +365,10 @@ header h2 {
 nav {
   background-color: var(--love);
   color: var(--base);
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: calc(0px - var(--page-gutter));
+  margin-right: calc(0px - var(--page-gutter));
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
 }
 
 nav a {
@@ -472,18 +473,18 @@ a:has(.card) {
 .post img {
   height: auto;
   margin-bottom: 1rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  width: calc(100% + 2rem);
+  margin-left: calc(0px - var(--page-gutter));
+  margin-right: calc(0px - var(--page-gutter));
+  width: calc(100% + var(--page-gutter) + var(--page-gutter));
 }
 
 img.home-photo {
   height: auto;
   margin-bottom: 0;
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: calc(0px - var(--page-gutter));
+  margin-right: calc(0px - var(--page-gutter));
   margin-top: 1rem;
-  width: calc(100% + 2rem);
+  width: calc(100% + var(--page-gutter) + var(--page-gutter));
 }
 
 @media (min-width: 42rem) {
