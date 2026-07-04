@@ -470,10 +470,6 @@ a:has(.card) {
   width: 42px;
 }
 
-.post {
-  margin-top: 2rem;
-}
-
 .post img {
   height: auto;
   margin-bottom: 1rem;
