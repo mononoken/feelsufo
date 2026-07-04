@@ -6,7 +6,7 @@ website: https://homewardtails.org
 github: https://github.com/rubyforgood/homeward-tails
 createdAt: 2024-01-13
 lastUpdated: 2024-11-03
-icon: "@src/assets/icons/homeward-tails.svg"
+icon: "public/ruby-for-good.jpg"
 iconAlt: Homeward Tails icon
 ---
 
